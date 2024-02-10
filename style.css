@@ -1,0 +1,280 @@
+/*** RESET ***/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 1rem;
+    font-family: var(--ff--Outfit);
+    font-weight: var(--fw--400);
+    color: var(--clr--Wenge-Brown);
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+/*** main css ***/
+
+:root {
+    --clr--Nutmeg: hsl(14, 45%, 36%);
+    --clr--Dark-Raspberry: hsl(332, 51%, 32%);
+    --clr--White: hsl(0, 0%, 100%);
+    --clr--Rose-White: hsl(330, 100%, 98%);
+    --clr--Eggshell: hsl(30, 54%, 90%);
+    --clr--Light-Grey: hsl(30, 18%, 87%);
+    --clr--Wenge-Brown: hsl(30, 10%, 34%);
+    --clr--Dark-Charcoal: hsl(24, 5%, 18%);
+    --ff--Outfit: 'Outfit', sans-serif;
+    --ff--Young-serif: 'Young Serif', serif;
+    --fw--400: 400;
+    --fw--600: 600;
+    --fw--700: 700;
+}
+
+.container {
+    width: 100%;
+    max-width: 90rem;
+    margin-inline: auto;
+    /*** same as margin: 0 auto ***/
+}
+
+.main {
+    width: 100%;
+    max-width: 45.938rem;
+    margin-inline: auto;
+}
+
+.main__wrapper {
+    width: 83%;
+    margin-inline: auto;
+}
+
+.main h1 {
+    font-size: 2.2rem;
+    font-family: var(--ff--Young-serif);
+    color: var(--clr--Dark-Charcoal);
+    margin: 1.15em 0 0.6em 0em;
+    line-height: 1.05;
+}
+
+.main p {
+    line-height: 1.5;
+}
+
+.main__preparation {
+    background-color: var(--clr--Rose-White);
+    border-radius: 10px;
+    padding: 1.5em;
+    padding-bottom: 0.7em;
+    margin: 2rem 0;
+}
+
+.main__preparation h3 {
+    font-size: 1.25rem;
+    color: var(--clr--Dark-Raspberry);
+    font-weight: var(--fw--600);
+    margin-bottom: 0.65em;
+}
+
+.main__preparation ul {
+    margin-left: 1.5em;
+}
+
+.main__preparation ul li {
+    width: 80%;
+    margin-bottom: 0.45em;
+    line-height: 1.55;
+    padding-left: 1em;
+}
+
+.main__preparation ul li::marker {
+    color: var(--clr--Dark-Raspberry);
+}
+
+.main__ingredients {
+    padding-bottom: 1.4em;
+    border-bottom: 1px solid var(--clr--Light-Grey);
+}
+
+.main__ingredients h2 {
+    font-size: 1.75rem;
+    font-family: var(--ff--Young-serif);
+    font-weight: var(--fw--400);
+    color: var(--clr--Nutmeg);
+    margin-bottom: 0.68em;
+}
+
+.main__ingredients ul {
+    margin-left: 1.5em;
+}
+
+.main__ingredients ul li {
+    margin-bottom: 0.38em;
+    line-height: 1.6;
+    padding-left: 1em;
+}
+
+.main__instructions {
+    padding-top: 1.7em;
+    padding-bottom: 1.4em;
+    border-bottom: 1px solid var(--clr--Light-Grey);
+}
+
+
+.main__ingredients ul li::marker {
+    color: var(--clr--Nutmeg);
+}
+
+.main__instructions h2 {
+    font-size: 1.75rem;
+    font-family: var(--ff--Young-serif);
+    font-weight: var(--fw--400);
+    color: var(--clr--Nutmeg);
+    margin-bottom: 0.63em;
+}
+
+.main__instructions ol {
+    margin-left: 1.5em;
+}
+
+.main__instructions ol li::marker {
+    color: var(--clr--Nutmeg);
+    font-weight: var(--fw--700);
+}
+
+.main__instructions ol li {
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+    padding-left: 1em;
+}
+
+.main__nutrition {
+    padding-top: 1.7em;
+    padding-right: 1em;
+}
+
+.main__nutrition h2 {
+    font-size: 1.75rem;
+    font-family: var(--ff--Young-serif);
+    font-weight: var(--fw--400);
+    color: var(--clr--Nutmeg);
+    margin-bottom: 0.63em;
+}
+
+.main__nutrition p {
+    margin-bottom: 0.7em;
+}
+
+.main__nutrition--calories,
+.main__nutrition--carbs,
+.main__nutrition--protein {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em 0 0.65em 0;
+    border-bottom: 1px solid var(--clr--Light-Grey);
+}
+
+.main__nutrition--fat {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em 0 0.65em 0;
+}
+
+.main__nutrition--calories p,
+.main__nutrition--carbs p,
+.main__nutrition--protein p,
+.main__nutrition--fat p {
+    margin-left: 1.8em;
+    margin-bottom: 0;
+    width: 44%;
+}
+
+p.main__nutrition-value {
+    color: var(--clr--Nutmeg);
+    font-weight: var(--fw--700);
+    margin-left: 0em;
+}
+
+
+
+.text-bold {
+    color: var(--clr--Wenge-Brown);
+    font-weight: var(--fw--700);
+}
+
+.footer {
+    margin-top: 3em;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:750px) {
+    .container {
+        background-color: var(--clr--Eggshell);
+        padding-top: 7.7rem;
+    }
+
+    .hero--image img {
+        border-radius: 15px;
+        height: 300px;
+    }
+
+    .main {
+        background-color: var(--clr--White);
+        padding: 2.5em;
+        padding-bottom: 1.8em;
+        border-radius: 15px;
+    }
+
+    .main__wrapper {
+        width: 100%;
+    }
+
+    .main h1 {
+        font-size: 2.5rem;
+        margin: 1em 0 0.55em 0em;
+    }
+
+    .main__preparation {
+        padding: 1.55em 0 1.3em 1.75em;
+        margin-bottom: 1.7em;
+    }
+
+    .main__ingredients {
+        padding-bottom: 1.45em;
+    }
+
+    .main__nutrition--calories p,
+    .main__nutrition--carbs p,
+    .main__nutrition--protein p,
+    .main__nutrition--fat p {
+        width: 47.5%;
+    }
+}
